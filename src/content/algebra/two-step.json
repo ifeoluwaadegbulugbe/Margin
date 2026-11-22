@@ -1,0 +1,161 @@
+[
+  {
+    "id": "TS-01", "skillId": "two-step", "difficulty": 1,
+    "statement": "x + 7 = 3", "latex": "x + 7 = 3",
+    "verifier": "linearEquation", "variable": "x", "answer": -4,
+    "objective": "Solve a one-step equation by undoing an addition",
+    "steps": [
+      { "id": 1, "objective": "Undo the +7 on both sides", "exampleLine": "x = 3 - 7" },
+      { "id": 2, "objective": "Work out the value of x", "exampleLine": "x = -4" }
+    ],
+    "distractors": [{ "value": 10, "misconception": "M-SIGN-MOVE", "atStep": 1 }],
+    "hints": {
+      "1": "What is being done to x on the left side?",
+      "2": "Adding is undone by subtracting. Whatever you do to one side, do to the other.",
+      "3": "Subtract 7 from both sides. What is left on each side?",
+      "4": { "problem": "x + 5 = 2", "lines": ["x = 2 - 5", "x = -3"], "answer": -3 }
+    },
+    "explainPrompt": "Why did you subtract 7 from both sides, not just one?",
+    "transferId": "TS-08", "tags": ["one-step", "M-SIGN-MOVE"]
+  },
+  {
+    "id": "TS-02", "skillId": "two-step", "difficulty": 1,
+    "statement": "5x = 35", "latex": "5x = 35",
+    "verifier": "linearEquation", "variable": "x", "answer": 7,
+    "objective": "Solve a one-step equation by undoing a multiplication",
+    "steps": [{ "id": 1, "objective": "Undo the multiplication by 5", "exampleLine": "x = 35 / 5" }],
+    "distractors": [
+      { "value": 30, "misconception": "M-INV-OP", "atStep": 1 },
+      { "value": 175, "misconception": "M-INV-OP", "atStep": 1 }
+    ],
+    "hints": {
+      "1": "5x means 5 lots of x. What operation joins the 5 and the x?",
+      "2": "Multiplying is undone by dividing, on both sides.",
+      "3": "Divide both sides by 5. What does each side become?",
+      "4": { "problem": "4x = 36", "lines": ["x = 36 / 4", "x = 9"], "answer": 9 }
+    },
+    "explainPrompt": "Why divide by 5 rather than subtract 5?",
+    "transferId": "TS-08", "tags": ["one-step", "M-INV-OP"]
+  },
+  {
+    "id": "TS-03", "skillId": "two-step", "difficulty": 2,
+    "statement": "2x + 5 = 17", "latex": "2x + 5 = 17",
+    "verifier": "linearEquation", "variable": "x", "answer": 6,
+    "objective": "Solve a two-step equation by undoing operations in reverse order",
+    "steps": [
+      { "id": 1, "objective": "Isolate the x term", "exampleLine": "2x = 12" },
+      { "id": 2, "objective": "Solve for x", "exampleLine": "x = 6" }
+    ],
+    "distractors": [{ "value": 11, "misconception": "M-SIGN-MOVE", "atStep": 1 }],
+    "hints": {
+      "1": "What has been done to x, and in what order?",
+      "2": "Undo operations in reverse order, doing the same thing to both sides.",
+      "3": "Subtract 5 from both sides first. What is left on each side?",
+      "4": { "problem": "3x + 4 = 19", "lines": ["3x = 15", "x = 5"], "answer": 5 }
+    },
+    "explainPrompt": "Why did you deal with the +5 before the 2?",
+    "transferId": "TS-08", "tags": ["two-step", "M-SIGN-MOVE"]
+  },
+  {
+    "id": "TS-04", "skillId": "two-step", "difficulty": 2,
+    "statement": "3x - 4 = 11", "latex": "3x - 4 = 11",
+    "verifier": "linearEquation", "variable": "x", "answer": 5,
+    "objective": "Solve a two-step equation with a subtraction",
+    "steps": [
+      { "id": 1, "objective": "Isolate the x term", "exampleLine": "3x = 15" },
+      { "id": 2, "objective": "Solve for x", "exampleLine": "x = 15 / 3" }
+    ],
+    "distractors": [{ "value": 2.3333333, "misconception": "M-SIGN-MOVE", "atStep": 1 }],
+    "hints": {
+      "1": "Look at what is attached to the 3x. What is it doing?",
+      "2": "Subtracting is undone by adding. Do it to both sides.",
+      "3": "Add 4 to both sides. What does each side become?",
+      "4": { "problem": "4x - 3 = 13", "lines": ["4x = 16", "x = 4"], "answer": 4 }
+    },
+    "explainPrompt": "Why did you add 4 to both sides?",
+    "transferId": "TS-08", "tags": ["two-step", "M-SIGN-MOVE"]
+  },
+  {
+    "id": "TS-05", "skillId": "two-step", "difficulty": 3,
+    "statement": "x/4 - 3 = 2", "latex": "\\frac{x}{4} - 3 = 2",
+    "verifier": "linearEquation", "variable": "x", "answer": 20,
+    "objective": "Solve a two-step equation that involves division",
+    "steps": [
+      { "id": 1, "objective": "Isolate the x/4 term", "exampleLine": "x/4 = 5" },
+      { "id": 2, "objective": "Undo the division", "exampleLine": "x = 5 * 4" }
+    ],
+    "distractors": [
+      { "value": -4, "misconception": "M-SIGN-MOVE", "atStep": 1 },
+      { "value": 1.25, "misconception": "M-INV-OP", "atStep": 2 }
+    ],
+    "hints": {
+      "1": "Two things happen to x here. Which one happened last?",
+      "2": "Undo the subtraction first, then undo the division. Dividing is undone by multiplying.",
+      "3": "Add 3 to both sides, then multiply both sides by 4.",
+      "4": { "problem": "x/3 - 2 = 4", "lines": ["x/3 = 6", "x = 18"], "answer": 18 }
+    },
+    "explainPrompt": "Why did you multiply by 4 at the end?",
+    "transferId": "TS-08", "tags": ["two-step", "division", "M-INV-OP"]
+  },
+  {
+    "id": "TS-06", "skillId": "two-step", "difficulty": 3,
+    "statement": "-3x + 4 = 19", "latex": "-3x + 4 = 19",
+    "verifier": "linearEquation", "variable": "x", "answer": -5,
+    "objective": "Solve a two-step equation with a negative coefficient",
+    "steps": [
+      { "id": 1, "objective": "Isolate the x term", "exampleLine": "-3x = 15" },
+      { "id": 2, "objective": "Divide by the negative coefficient", "exampleLine": "x = 15 / -3" }
+    ],
+    "distractors": [
+      { "value": 5, "misconception": "M-NEG-MULT", "atStep": 2 },
+      { "value": -7.6666667, "misconception": "M-SIGN-MOVE", "atStep": 1 }
+    ],
+    "hints": {
+      "1": "The number in front of x is negative. Which step should you do first?",
+      "2": "Undo the +4 first. Then divide both sides by the whole coefficient, sign included.",
+      "3": "Subtract 4 from both sides, then divide both sides by -3. Watch the sign.",
+      "4": { "problem": "-2x + 3 = 11", "lines": ["-2x = 8", "x = -4"], "answer": -4 }
+    },
+    "explainPrompt": "Why is the answer negative?",
+    "transferId": "TS-08", "tags": ["two-step", "negatives", "M-NEG-MULT", "M-SIGN-MOVE"]
+  },
+  {
+    "id": "TS-07", "skillId": "two-step", "difficulty": 2,
+    "statement": "4x + 9 = 1", "latex": "4x + 9 = 1",
+    "verifier": "linearEquation", "variable": "x", "answer": -2,
+    "objective": "Solve a two-step equation where the answer is negative",
+    "steps": [
+      { "id": 1, "objective": "Isolate the x term", "exampleLine": "4x = -8" },
+      { "id": 2, "objective": "Solve for x", "exampleLine": "x = -8 / 4" }
+    ],
+    "distractors": [{ "value": 2.5, "misconception": "M-SIGN-MOVE", "atStep": 1 }],
+    "hints": {
+      "1": "What is added to 4x? How would you get rid of it?",
+      "2": "To remove +9, subtract 9 from both sides. The right side may go negative.",
+      "3": "Subtract 9 from both sides. What is 1 take away 9?",
+      "4": { "problem": "5x + 7 = -8", "lines": ["5x = -15", "x = -3"], "answer": -3 }
+    },
+    "explainPrompt": "Why did the right side become negative?",
+    "transferId": "TS-08", "tags": ["two-step", "M-SIGN-MOVE"]
+  },
+  {
+    "id": "TS-08", "skillId": "two-step", "difficulty": 2, "transferOnly": true,
+    "statement": "A taxi charges £3 plus £2 per mile. A ride cost £17. Let x be the number of miles. Write an equation and solve it.",
+    "verifier": "linearEquation", "variable": "x", "answer": 7,
+    "objective": "Turn a real situation into a two-step equation and solve it",
+    "steps": [
+      { "id": 1, "objective": "Write the equation", "exampleLine": "3 + 2x = 17" },
+      { "id": 2, "objective": "Isolate the x term", "exampleLine": "2x = 14" },
+      { "id": 3, "objective": "Solve for x", "exampleLine": "x = 14 / 2" }
+    ],
+    "distractors": [{ "value": 10, "misconception": "M-SIGN-MOVE", "atStep": 2 }],
+    "hints": {
+      "1": "What does the total cost depend on?",
+      "2": "Total = fixed charge + cost per mile × miles.",
+      "3": "Write 3 + 2x = 17, then undo the +3.",
+      "4": { "problem": "A gym costs £5 plus £4 per class. Total £25.", "lines": ["5 + 4x = 25", "4x = 20", "x = 5"], "answer": 5 }
+    },
+    "explainPrompt": "What does each part of your equation stand for?",
+    "tags": ["transfer", "word-problem"]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "NN-01", "skillId": "neg-numbers", "difficulty": 1,
+    "statement": "-7 + 12", "latex": "-7 + 12",
+    "verifier": "numeric", "answer": 5,
+    "objective": "Add a positive number to a negative",
+    "steps": [{ "id": 1, "objective": "Count up from -7 on a number line", "exampleLine": "12 - 7" }],
+    "distractors": [{ "value": -19, "misconception": "M-NEG-SUB" }],
+    "hints": {
+      "1": "Picture a number line. Where do you start, and which way do you move?",
+      "2": "Adding a positive moves you right on the number line.",
+      "3": "Rewrite it as 12 - 7. What is that?",
+      "4": { "problem": "-4 + 10", "lines": ["10 - 4", "6"], "answer": 6 }
+    },
+    "explainPrompt": "Why is the answer positive?",
+    "transferId": "NN-08", "tags": ["add"]
+  },
+  {
+    "id": "NN-02", "skillId": "neg-numbers", "difficulty": 2,
+    "statement": "4 - (-6)", "latex": "4 - (-6)",
+    "verifier": "numeric", "answer": 10,
+    "objective": "Subtract a negative number",
+    "steps": [{ "id": 1, "objective": "Rewrite subtracting a negative", "exampleLine": "4 + 6" }],
+    "distractors": [{ "value": -2, "misconception": "M-NEG-SUB" }],
+    "hints": {
+      "1": "What does taking away a negative do?",
+      "2": "Subtracting a negative is the same as adding its opposite.",
+      "3": "Rewrite it as 4 + 6. What do you get?",
+      "4": { "problem": "9 - (-2)", "lines": ["9 + 2", "11"], "answer": 11 }
+    },
+    "explainPrompt": "Why does subtracting -6 make the number bigger?",
+    "transferId": "NN-08", "tags": ["subtract", "M-NEG-SUB"]
+  },
+  {
+    "id": "NN-03", "skillId": "neg-numbers", "difficulty": 3,
+    "statement": "-3 × -5", "latex": "-3 \\times -5",
+    "verifier": "numeric", "answer": 15,
+    "objective": "Multiply two negative numbers",
+    "steps": [{ "id": 1, "objective": "Multiply the sizes, then decide the sign", "exampleLine": "3 * 5" }],
+    "distractors": [{ "value": -15, "misconception": "M-NEG-MULT" }],
+    "hints": {
+      "1": "How many negative signs are there?",
+      "2": "Two negatives multiplied give a positive.",
+      "3": "Multiply 3 by 5, then decide the sign from the rule.",
+      "4": { "problem": "-4 × -2", "lines": ["4 * 2", "8"], "answer": 8 }
+    },
+    "explainPrompt": "Why is negative times negative positive?",
+    "transferId": "NN-08", "tags": ["multiply", "M-NEG-MULT"]
+  },
+  {
+    "id": "NN-04", "skillId": "neg-numbers", "difficulty": 3,
+    "statement": "-24 ÷ 6", "latex": "-24 \\div 6",
+    "verifier": "numeric", "answer": -4,
+    "objective": "Divide a negative by a positive",
+    "steps": [{ "id": 1, "objective": "Divide the sizes, then decide the sign", "exampleLine": "-(24 / 6)" }],
+    "distractors": [{ "value": 4, "misconception": "M-NEG-MULT" }],
+    "hints": {
+      "1": "One number is negative and one is positive. What does that tell you?",
+      "2": "One negative in a division gives a negative answer.",
+      "3": "Work out 24 ÷ 6, then apply the sign rule.",
+      "4": { "problem": "-18 ÷ 3", "lines": ["-(18 / 3)", "-6"], "answer": -6 }
+    },
+    "explainPrompt": "How did you decide the sign?",
+    "transferId": "NN-08", "tags": ["divide", "M-NEG-MULT"]
+  },
+  {
+    "id": "NN-05", "skillId": "neg-numbers", "difficulty": 1,
+    "statement": "-8 - 5", "latex": "-8 - 5",
+    "verifier": "numeric", "answer": -13,
+    "objective": "Subtract from a negative number",
+    "steps": [{ "id": 1, "objective": "Move further left on the number line", "exampleLine": "-(8 + 5)" }],
+    "distractors": [{ "value": -3, "misconception": "M-NEG-SUB" }],
+    "hints": {
+      "1": "You start below zero. Does subtracting move you up or down?",
+      "2": "Subtracting a positive always moves left on the number line.",
+      "3": "Start at -8 and move 5 more to the left.",
+      "4": { "problem": "-6 - 4", "lines": ["-(6 + 4)", "-10"], "answer": -10 }
+    },
+    "explainPrompt": "Why does the answer get more negative?",
+    "transferId": "NN-08", "tags": ["subtract"]
+  },
+  {
+    "id": "NN-06", "skillId": "neg-numbers", "difficulty": 2,
+    "statement": "-2 - (-9)", "latex": "-2 - (-9)",
+    "verifier": "numeric", "answer": 7,
+    "objective": "Subtract a negative from a negative",
+    "steps": [{ "id": 1, "objective": "Rewrite subtracting a negative", "exampleLine": "-2 + 9" }],
+    "distractors": [{ "value": -11, "misconception": "M-NEG-SUB" }],
+    "hints": {
+      "1": "There are two minus signs next to each other. What do they become?",
+      "2": "Subtracting a negative is adding its opposite.",
+      "3": "Rewrite it as -2 + 9, then count up from -2.",
+      "4": { "problem": "-5 - (-8)", "lines": ["-5 + 8", "3"], "answer": 3 }
+    },
+    "explainPrompt": "Why did the two minus signs turn into a plus?",
+    "transferId": "NN-08", "tags": ["subtract", "M-NEG-SUB"]
+  },
+  {
+    "id": "NN-07", "skillId": "neg-numbers", "difficulty": 3,
+    "statement": "(-6) × 4 ÷ (-3)", "latex": "(-6) \\times 4 \\div (-3)",
+    "verifier": "numeric", "answer": 8,
+    "objective": "Combine multiplication and division with negatives",
+    "steps": [
+      { "id": 1, "objective": "Work left to right", "exampleLine": "-24 / -3" }
+    ],
+    "distractors": [{ "value": -8, "misconception": "M-NEG-MULT" }],
+    "hints": {
+      "1": "Count the negative signs. Odd or even?",
+      "2": "An even number of negatives in × and ÷ gives a positive.",
+      "3": "Work out -6 × 4 first, then divide by -3.",
+      "4": { "problem": "(-10) × 3 ÷ (-5)", "lines": ["-30 / -5", "6"], "answer": 6 }
+    },
+    "explainPrompt": "How did counting the negatives help?",
+    "transferId": "NN-08", "tags": ["multiply", "divide", "M-NEG-MULT"]
+  },
+  {
+    "id": "NN-08", "skillId": "neg-numbers", "difficulty": 2, "transferOnly": true,
+    "statement": "The temperature was -3°C. It fell by 5 degrees, then rose by 9. Write one calculation and work out the temperature now.",
+    "verifier": "numeric", "answer": 1,
+    "objective": "Use negative numbers in a real situation",
+    "steps": [{ "id": 1, "objective": "Write the calculation", "exampleLine": "-3 - 5 + 9" }],
+    "distractors": [{ "value": 11, "misconception": "M-NEG-SUB" }],
+    "hints": {
+      "1": "Does falling make the number bigger or smaller?",
+      "2": "Falling is subtracting; rising is adding.",
+      "3": "Write -3 - 5 + 9 and work left to right.",
+      "4": { "problem": "Start at -2°C, fall 4, rise 10.", "lines": ["-2 - 4 + 10", "4"], "answer": 4 }
+    },
+    "explainPrompt": "Why did you subtract the 5?",
+    "tags": ["transfer", "word-problem"]
+  }
+]

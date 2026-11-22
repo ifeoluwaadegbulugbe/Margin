@@ -1,0 +1,177 @@
+[
+  {
+    "id": "MS-01", "skillId": "multi-step", "difficulty": 1,
+    "statement": "2(x + 3) = 14", "latex": "2(x + 3) = 14",
+    "verifier": "linearEquation", "variable": "x", "answer": 4,
+    "objective": "Solve an equation with one bracket",
+    "steps": [
+      { "id": 1, "objective": "Remove the bracket", "exampleLine": "2x + 6 = 14", "alt": ["x + 3 = 7"] },
+      { "id": 2, "objective": "Isolate the x term", "exampleLine": "2x = 8" },
+      { "id": 3, "objective": "Solve for x", "exampleLine": "x = 8 / 2" }
+    ],
+    "distractors": [
+      { "value": 5.5, "misconception": "M-DIST-FIRST", "atStep": 1 },
+      { "value": 10, "misconception": "M-SIGN-MOVE", "atStep": 2 }
+    ],
+    "hints": {
+      "1": "Look at the bracket. What is the 2 doing to everything inside it?",
+      "2": "Expanding means multiplying every term inside the bracket by the number outside.",
+      "3": "Multiply 2 by x and 2 by 3. Then deal with the constant.",
+      "4": { "problem": "3(x + 2) = 21", "lines": ["3x + 6 = 21", "3x = 15", "x = 5"], "answer": 5 }
+    },
+    "explainPrompt": "Why does the 2 multiply the 3 as well as the x?",
+    "transferId": "MS-08", "tags": ["brackets", "M-DIST-FIRST"]
+  },
+  {
+    "id": "MS-02", "skillId": "multi-step", "difficulty": 2,
+    "statement": "3(x - 2) = 12", "latex": "3(x - 2) = 12",
+    "verifier": "linearEquation", "variable": "x", "answer": 6,
+    "objective": "Solve an equation with a bracket by expanding or dividing first",
+    "steps": [
+      { "id": 1, "objective": "Remove the bracket", "exampleLine": "3x - 6 = 12", "alt": ["x - 2 = 4"] },
+      { "id": 2, "objective": "Isolate the x term", "exampleLine": "3x = 18" },
+      { "id": 3, "objective": "Solve for x", "exampleLine": "x = 18 / 3" }
+    ],
+    "distractors": [
+      { "value": 2, "misconception": "M-SIGN-MOVE", "atStep": 2 },
+      { "value": 4.6666667, "misconception": "M-DIST-FIRST", "atStep": 1 },
+      { "value": 15, "misconception": "M-INV-OP", "atStep": 3 }
+    ],
+    "hints": {
+      "1": "Look at the bracket. What is the 3 doing to everything inside it?",
+      "2": "Expanding means multiplying every term inside the bracket by the number outside.",
+      "3": "Multiply 3 by x and 3 by -2. Then deal with the constant.",
+      "4": { "problem": "4(x - 1) = 24", "lines": ["4x - 4 = 24", "4x = 28", "x = 7"], "answer": 7 }
+    },
+    "explainPrompt": "Why did you add 6 to both sides?",
+    "transferId": "MS-08", "tags": ["brackets", "M-SIGN-MOVE", "M-DIST-FIRST"]
+  },
+  {
+    "id": "MS-03", "skillId": "multi-step", "difficulty": 2,
+    "statement": "5x + 3 = 2x + 18", "latex": "5x + 3 = 2x + 18",
+    "verifier": "linearEquation", "variable": "x", "answer": 5,
+    "objective": "Collect x terms on one side, then solve",
+    "steps": [
+      { "id": 1, "objective": "Collect the x terms on one side", "exampleLine": "3x + 3 = 18" },
+      { "id": 2, "objective": "Isolate the x term", "exampleLine": "3x = 15" },
+      { "id": 3, "objective": "Solve for x", "exampleLine": "x = 15 / 3" }
+    ],
+    "distractors": [
+      { "value": 7, "misconception": "M-SIGN-MOVE", "atStep": 2 },
+      { "value": 2.1428571, "misconception": "M-SIGN-MOVE", "atStep": 1 }
+    ],
+    "hints": {
+      "1": "There are x's on both sides. What could you do about that?",
+      "2": "Get all the x terms on one side by doing the same thing to both sides.",
+      "3": "Subtract 2x from both sides. What do you get?",
+      "4": { "problem": "7x + 1 = 3x + 13", "lines": ["4x + 1 = 13", "4x = 12", "x = 3"], "answer": 3 }
+    },
+    "explainPrompt": "Why subtract 2x from both sides?",
+    "transferId": "MS-08", "tags": ["both-sides", "M-SIGN-MOVE"]
+  },
+  {
+    "id": "MS-04", "skillId": "multi-step", "difficulty": 2,
+    "statement": "2(x + 4) = 3x - 1", "latex": "2(x + 4) = 3x - 1",
+    "verifier": "linearEquation", "variable": "x", "answer": 9,
+    "objective": "Expand a bracket, then solve with x on both sides",
+    "steps": [
+      { "id": 1, "objective": "Remove the bracket", "exampleLine": "2x + 8 = 3x - 1" },
+      { "id": 2, "objective": "Collect the x terms on one side", "exampleLine": "8 = x - 1" },
+      { "id": 3, "objective": "Solve for x", "exampleLine": "x = 8 + 1" }
+    ],
+    "distractors": [{ "value": 5, "misconception": "M-DIST-FIRST", "atStep": 1 }],
+    "hints": {
+      "1": "There is a bracket and x on both sides. Which would you tackle first?",
+      "2": "Expand the bracket first, then gather the x terms where there are more of them.",
+      "3": "Expand to 2x + 8, then subtract 2x from both sides.",
+      "4": { "problem": "3(x + 1) = 4x - 2", "lines": ["3x + 3 = 4x - 2", "3 = x - 2", "x = 5"], "answer": 5 }
+    },
+    "explainPrompt": "Why move the 2x rather than the 3x?",
+    "transferId": "MS-08", "tags": ["brackets", "both-sides", "M-DIST-FIRST"]
+  },
+  {
+    "id": "MS-05", "skillId": "multi-step", "difficulty": 3,
+    "statement": "4(x - 1) = 2(x + 3)", "latex": "4(x - 1) = 2(x + 3)",
+    "verifier": "linearEquation", "variable": "x", "answer": 5,
+    "objective": "Expand two brackets and solve",
+    "steps": [
+      { "id": 1, "objective": "Remove both brackets", "exampleLine": "4x - 4 = 2x + 6" },
+      { "id": 2, "objective": "Collect the x terms on one side", "exampleLine": "2x - 4 = 6" },
+      { "id": 3, "objective": "Isolate the x term", "exampleLine": "2x = 10" },
+      { "id": 4, "objective": "Solve for x", "exampleLine": "x = 10 / 2" }
+    ],
+    "distractors": [
+      { "value": 2, "misconception": "M-DIST-FIRST", "atStep": 1 },
+      { "value": 1, "misconception": "M-SIGN-MOVE", "atStep": 3 }
+    ],
+    "hints": {
+      "1": "Two brackets. What does each number outside do to its bracket?",
+      "2": "Expand both brackets fully, then collect x terms on one side.",
+      "3": "Expand to 4x - 4 = 2x + 6, then subtract 2x from both sides.",
+      "4": { "problem": "3(x - 2) = 2(x + 1)", "lines": ["3x - 6 = 2x + 2", "x - 6 = 2", "x = 8"], "answer": 8 }
+    },
+    "explainPrompt": "Why did you expand both brackets before moving anything?",
+    "transferId": "MS-08", "tags": ["brackets", "both-sides", "M-DIST-FIRST", "M-SIGN-MOVE"]
+  },
+  {
+    "id": "MS-06", "skillId": "multi-step", "difficulty": 3,
+    "statement": "6x - 5 = 2x + 4", "latex": "6x - 5 = 2x + 4",
+    "verifier": "linearEquation", "variable": "x", "answer": 2.25,
+    "objective": "Solve with x on both sides and a fractional answer",
+    "steps": [
+      { "id": 1, "objective": "Collect the x terms on one side", "exampleLine": "4x - 5 = 4" },
+      { "id": 2, "objective": "Isolate the x term", "exampleLine": "4x = 9" },
+      { "id": 3, "objective": "Solve for x", "exampleLine": "x = 9 / 4" }
+    ],
+    "distractors": [{ "value": -0.25, "misconception": "M-SIGN-MOVE", "atStep": 2 }],
+    "hints": {
+      "1": "Which side has more x's? Where might you collect them?",
+      "2": "Subtract the smaller x term from both sides, then undo the constant.",
+      "3": "Subtract 2x from both sides, then add 5 to both sides.",
+      "4": { "problem": "5x - 3 = 2x + 5", "lines": ["3x - 3 = 5", "3x = 8", "x = 8/3"], "answer": 2.6666667 }
+    },
+    "explainPrompt": "Is it okay for an answer to be a fraction? Why?",
+    "transferId": "MS-08", "tags": ["both-sides", "fractions", "M-SIGN-MOVE"]
+  },
+  {
+    "id": "MS-07", "skillId": "multi-step", "difficulty": 3,
+    "statement": "3(2x - 1) = 4x + 7", "latex": "3(2x - 1) = 4x + 7",
+    "verifier": "linearEquation", "variable": "x", "answer": 5,
+    "objective": "Expand, collect and solve",
+    "steps": [
+      { "id": 1, "objective": "Remove the bracket", "exampleLine": "6x - 3 = 4x + 7" },
+      { "id": 2, "objective": "Collect the x terms on one side", "exampleLine": "2x - 3 = 7" },
+      { "id": 3, "objective": "Isolate the x term", "exampleLine": "2x = 10" },
+      { "id": 4, "objective": "Solve for x", "exampleLine": "x = 10 / 2" }
+    ],
+    "distractors": [{ "value": 4, "misconception": "M-DIST-FIRST", "atStep": 1 }],
+    "hints": {
+      "1": "Start with the bracket. What does 3 multiply?",
+      "2": "Expand fully, then collect the x terms on one side.",
+      "3": "Expand to 6x - 3, then subtract 4x from both sides.",
+      "4": { "problem": "2(2x - 1) = x + 10", "lines": ["4x - 2 = x + 10", "3x - 2 = 10", "3x = 12", "x = 4"], "answer": 4 }
+    },
+    "explainPrompt": "Why does 3 times -1 give -3?",
+    "transferId": "MS-08", "tags": ["brackets", "both-sides", "M-DIST-FIRST"]
+  },
+  {
+    "id": "MS-08", "skillId": "multi-step", "difficulty": 3, "transferOnly": true,
+    "statement": "Plan A costs £10 plus £2 per GB. Plan B costs £4 plus £3.50 per GB. Let x be the GB used. At how many GB do they cost the same?",
+    "verifier": "linearEquation", "variable": "x", "answer": 4,
+    "objective": "Set two expressions equal and solve",
+    "steps": [
+      { "id": 1, "objective": "Write the equation", "exampleLine": "10 + 2x = 4 + 3.5x" },
+      { "id": 2, "objective": "Collect the x terms on one side", "exampleLine": "6 = 1.5x" },
+      { "id": 3, "objective": "Solve for x", "exampleLine": "x = 6 / 1.5" }
+    ],
+    "distractors": [],
+    "hints": {
+      "1": "What does 'cost the same' mean in maths?",
+      "2": "Write each plan's cost using x, then set them equal.",
+      "3": "Write 10 + 2x = 4 + 3.5x, then collect the x terms.",
+      "4": { "problem": "Shop A: £6 + £1 per item. Shop B: £2 + £3 per item.", "lines": ["6 + x = 2 + 3x", "4 = 2x", "x = 2"], "answer": 2 }
+    },
+    "explainPrompt": "Why do you set the two costs equal to each other?",
+    "tags": ["transfer", "word-problem"]
+  }
+]

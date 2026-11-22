@@ -1,0 +1,142 @@
+[
+  {
+    "id": "OO-01", "skillId": "order-ops", "difficulty": 1,
+    "statement": "3 + 4 × 2", "latex": "3 + 4 \\times 2",
+    "verifier": "numeric", "answer": 11,
+    "objective": "Multiply before adding",
+    "steps": [{ "id": 1, "objective": "Do the multiplication first", "exampleLine": "3 + 8" }],
+    "distractors": [{ "value": 14, "misconception": "M-BODMAS-LTR" }],
+    "hints": {
+      "1": "Which operation does the order rule say comes first here?",
+      "2": "Multiplication comes before addition unless brackets say otherwise.",
+      "3": "Work out 4 × 2 first, then add.",
+      "4": { "problem": "5 + 3 × 3", "lines": ["5 + 9", "14"], "answer": 14 }
+    },
+    "explainPrompt": "Why didn't you add 3 and 4 first?",
+    "transferId": "OO-08", "tags": ["M-BODMAS-LTR"]
+  },
+  {
+    "id": "OO-02", "skillId": "order-ops", "difficulty": 2,
+    "statement": "(3 + 4) × 2", "latex": "(3 + 4) \\times 2",
+    "verifier": "numeric", "answer": 14,
+    "objective": "Brackets come first",
+    "steps": [{ "id": 1, "objective": "Work out the bracket", "exampleLine": "7 * 2" }],
+    "distractors": [{ "value": 11, "misconception": "M-BODMAS-LTR" }],
+    "hints": {
+      "1": "What do the brackets tell you?",
+      "2": "Brackets are always worked out before anything else.",
+      "3": "Work out 3 + 4 first, then multiply.",
+      "4": { "problem": "(2 + 5) × 3", "lines": ["7 * 3", "21"], "answer": 21 }
+    },
+    "explainPrompt": "How did the brackets change the answer?",
+    "transferId": "OO-08", "tags": ["brackets"]
+  },
+  {
+    "id": "OO-03", "skillId": "order-ops", "difficulty": 2,
+    "statement": "20 - 6 ÷ 3 × 2", "latex": "20 - 6 \\div 3 \\times 2",
+    "verifier": "numeric", "answer": 16,
+    "objective": "Divide and multiply left to right before subtracting",
+    "steps": [
+      { "id": 1, "objective": "Divide first (it comes first, left to right)", "exampleLine": "20 - 2 * 2" },
+      { "id": 2, "objective": "Then multiply", "exampleLine": "20 - 4" }
+    ],
+    "distractors": [{ "value": 9.3333333, "misconception": "M-BODMAS-LTR" }],
+    "hints": {
+      "1": "Which operations here are 'stronger' than subtraction?",
+      "2": "Division and multiplication share a level: do them left to right, before subtraction.",
+      "3": "Work out 6 ÷ 3, multiply that by 2, then subtract from 20.",
+      "4": { "problem": "18 - 8 ÷ 4 × 3", "lines": ["18 - 2 * 3", "18 - 6", "12"], "answer": 12 }
+    },
+    "explainPrompt": "Why do division and multiplication go left to right?",
+    "transferId": "OO-08", "tags": ["M-BODMAS-LTR"]
+  },
+  {
+    "id": "OO-04", "skillId": "order-ops", "difficulty": 3,
+    "statement": "2 + 3^2 × 2", "latex": "2 + 3^2 \\times 2",
+    "verifier": "numeric", "answer": 20,
+    "objective": "Powers before multiplication before addition",
+    "steps": [
+      { "id": 1, "objective": "Work out the power", "exampleLine": "2 + 9 * 2" },
+      { "id": 2, "objective": "Multiply", "exampleLine": "2 + 18" }
+    ],
+    "distractors": [{ "value": 50, "misconception": "M-BODMAS-LTR" }],
+    "hints": {
+      "1": "There is a power here. Where does it come in the order?",
+      "2": "Powers come after brackets but before × and ÷.",
+      "3": "Work out 3 squared first, then multiply by 2, then add.",
+      "4": { "problem": "1 + 2^3 × 2", "lines": ["1 + 8 * 2", "1 + 16", "17"], "answer": 17 }
+    },
+    "explainPrompt": "Why does the power come before the multiplication?",
+    "transferId": "OO-08", "tags": ["powers", "M-BODMAS-LTR"]
+  },
+  {
+    "id": "OO-05", "skillId": "order-ops", "difficulty": 3,
+    "statement": "-2^2 + 5", "latex": "-2^2 + 5",
+    "verifier": "numeric", "answer": 1,
+    "objective": "Square before applying the negative sign",
+    "steps": [{ "id": 1, "objective": "Square 2, then apply the minus", "exampleLine": "-4 + 5" }],
+    "distractors": [{ "value": 9, "misconception": "M-NEG-MULT" }],
+    "hints": {
+      "1": "Is the minus sign inside the square, or outside it?",
+      "2": "Without brackets, -2² means -(2²): square first, then make it negative.",
+      "3": "Work out 2², put the minus in front, then add 5.",
+      "4": { "problem": "-3^2 + 12", "lines": ["-9 + 12", "3"], "answer": 3 }
+    },
+    "explainPrompt": "How is -2² different from (-2)²?",
+    "transferId": "OO-08", "tags": ["powers", "negatives", "M-NEG-MULT"]
+  },
+  {
+    "id": "OO-06", "skillId": "order-ops", "difficulty": 2,
+    "statement": "12 ÷ (2 + 4) + 3", "latex": "12 \\div (2 + 4) + 3",
+    "verifier": "numeric", "answer": 5,
+    "objective": "Brackets, then divide, then add",
+    "steps": [
+      { "id": 1, "objective": "Work out the bracket", "exampleLine": "12 / 6 + 3" },
+      { "id": 2, "objective": "Divide", "exampleLine": "2 + 3" }
+    ],
+    "distractors": [{ "value": 13, "misconception": "M-BODMAS-LTR" }],
+    "hints": {
+      "1": "What must you do before you can divide 12 by anything?",
+      "2": "Brackets first, then division, then addition.",
+      "3": "Work out 2 + 4, divide 12 by it, then add 3.",
+      "4": { "problem": "20 ÷ (1 + 4) + 2", "lines": ["20 / 5 + 2", "4 + 2", "6"], "answer": 6 }
+    },
+    "explainPrompt": "What did the bracket protect?",
+    "transferId": "OO-08", "tags": ["brackets", "M-BODMAS-LTR"]
+  },
+  {
+    "id": "OO-07", "skillId": "order-ops", "difficulty": 3,
+    "statement": "4 × (5 - 2)^2", "latex": "4 \\times (5 - 2)^2",
+    "verifier": "numeric", "answer": 36,
+    "objective": "Brackets, then powers, then multiplication",
+    "steps": [
+      { "id": 1, "objective": "Work out the bracket", "exampleLine": "4 * 3^2" },
+      { "id": 2, "objective": "Square", "exampleLine": "4 * 9" }
+    ],
+    "distractors": [{ "value": 144, "misconception": "M-BODMAS-LTR" }],
+    "hints": {
+      "1": "What is being squared: just the bracket, or the 4 as well?",
+      "2": "The power belongs only to the bracket, and powers come before multiplying.",
+      "3": "Work out 5 - 2, square it, then multiply by 4.",
+      "4": { "problem": "2 × (4 - 1)^2", "lines": ["2 * 3^2", "2 * 9", "18"], "answer": 18 }
+    },
+    "explainPrompt": "Why didn't you multiply by 4 before squaring?",
+    "transferId": "OO-08", "tags": ["powers", "brackets", "M-BODMAS-LTR"]
+  },
+  {
+    "id": "OO-08", "skillId": "order-ops", "difficulty": 2, "transferOnly": true,
+    "statement": "A cinema ticket costs £8 and popcorn costs £3. Four friends each buy a ticket and popcorn. Write one calculation for the total and work it out.",
+    "verifier": "numeric", "answer": 44,
+    "objective": "Use brackets to write a real calculation",
+    "steps": [{ "id": 1, "objective": "Write the calculation with brackets", "exampleLine": "4 * (8 + 3)" }],
+    "distractors": [{ "value": 35, "misconception": "M-BODMAS-LTR" }],
+    "hints": {
+      "1": "What does one friend spend?",
+      "2": "Use brackets to group one person's spending, then multiply.",
+      "3": "Write 4 × (8 + 3) and work out the bracket first.",
+      "4": { "problem": "3 friends, £5 ticket and £2 drink each", "lines": ["3 * (5 + 2)", "21"], "answer": 21 }
+    },
+    "explainPrompt": "Why do you need brackets here?",
+    "tags": ["transfer", "word-problem"]
+  }
+]

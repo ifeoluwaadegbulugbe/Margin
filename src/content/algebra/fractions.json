@@ -1,0 +1,134 @@
+[
+  {
+    "id": "FR-01", "skillId": "fractions", "difficulty": 1,
+    "statement": "2/7 + 3/7", "latex": "\\frac{2}{7} + \\frac{3}{7}",
+    "verifier": "numeric", "answer": 0.7142857142857143,
+    "objective": "Add fractions with the same denominator",
+    "steps": [{ "id": 1, "objective": "Add the numerators, keep the denominator", "exampleLine": "(2 + 3)/7" }],
+    "distractors": [{ "value": 0.35714285714, "misconception": "M-FRAC-ADD" }],
+    "hints": {
+      "1": "Are the pieces the same size?",
+      "2": "When the denominators match, you add the numerators and keep the denominator.",
+      "3": "Add 2 and 3 on top. What stays on the bottom?",
+      "4": { "problem": "1/5 + 2/5", "lines": ["(1 + 2)/5", "3/5"], "answer": 0.6 }
+    },
+    "explainPrompt": "Why does the denominator stay the same?",
+    "transferId": "FR-08", "tags": ["add", "M-FRAC-ADD"]
+  },
+  {
+    "id": "FR-02", "skillId": "fractions", "difficulty": 2,
+    "statement": "1/3 + 1/4", "latex": "\\frac{1}{3} + \\frac{1}{4}",
+    "verifier": "numeric", "answer": 0.5833333333333334,
+    "objective": "Add fractions with unlike denominators",
+    "steps": [
+      { "id": 1, "objective": "Rewrite with a common denominator", "exampleLine": "4/12 + 3/12" }
+    ],
+    "distractors": [{ "value": 0.28571428571, "misconception": "M-FRAC-ADD" }],
+    "hints": {
+      "1": "Are these pieces the same size?",
+      "2": "You can only add fractions when the denominators match.",
+      "3": "Rewrite both as twelfths. How many twelfths is 1/3? And 1/4?",
+      "4": { "problem": "1/2 + 1/5", "lines": ["5/10 + 2/10", "7/10"], "answer": 0.7 }
+    },
+    "explainPrompt": "Why did you change both fractions to twelfths?",
+    "transferId": "FR-08", "tags": ["add", "M-FRAC-ADD"]
+  },
+  {
+    "id": "FR-03", "skillId": "fractions", "difficulty": 2,
+    "statement": "3/4 - 1/6", "latex": "\\frac{3}{4} - \\frac{1}{6}",
+    "verifier": "numeric", "answer": 0.5833333333333334,
+    "objective": "Subtract fractions with unlike denominators",
+    "steps": [{ "id": 1, "objective": "Rewrite with a common denominator", "exampleLine": "9/12 - 2/12" }],
+    "distractors": [{ "value": -1, "misconception": "M-FRAC-ADD" }],
+    "hints": {
+      "1": "What do quarters and sixths have in common?",
+      "2": "Find a common denominator (a number both 4 and 6 go into).",
+      "3": "Rewrite both as twelfths, then subtract the numerators.",
+      "4": { "problem": "2/3 - 1/4", "lines": ["8/12 - 3/12", "5/12"], "answer": 0.4166666666666667 }
+    },
+    "explainPrompt": "How did you choose 12?",
+    "transferId": "FR-08", "tags": ["subtract", "M-FRAC-ADD"]
+  },
+  {
+    "id": "FR-04", "skillId": "fractions", "difficulty": 2,
+    "statement": "2/3 × 9/10", "latex": "\\frac{2}{3} \\times \\frac{9}{10}",
+    "verifier": "numeric", "answer": 0.6, "requireSimplest": true,
+    "objective": "Multiply fractions and simplify",
+    "steps": [
+      { "id": 1, "objective": "Multiply tops and bottoms", "exampleLine": "18/30" }
+    ],
+    "distractors": [],
+    "hints": {
+      "1": "When multiplying fractions, what do you do with the tops? The bottoms?",
+      "2": "Multiply numerators together and denominators together, then simplify.",
+      "3": "Work out 2 × 9 over 3 × 10, then divide top and bottom by their biggest common factor.",
+      "4": { "problem": "3/4 × 2/9", "lines": ["6/36", "1/6"], "answer": 0.16666666666666666 }
+    },
+    "explainPrompt": "How did you know your answer was fully simplified?",
+    "transferId": "FR-08", "tags": ["multiply", "simplify"]
+  },
+  {
+    "id": "FR-05", "skillId": "fractions", "difficulty": 3,
+    "statement": "3/4 ÷ 1/2", "latex": "\\frac{3}{4} \\div \\frac{1}{2}",
+    "verifier": "numeric", "answer": 1.5,
+    "objective": "Divide by a fraction by multiplying by its reciprocal",
+    "steps": [{ "id": 1, "objective": "Flip the second fraction and multiply", "exampleLine": "3/4 * 2/1" }],
+    "distractors": [{ "value": 0.375, "misconception": "M-FRAC-DIV" }],
+    "hints": {
+      "1": "How many halves fit into three quarters: more or less than one?",
+      "2": "Dividing by a fraction is the same as multiplying by its reciprocal (flip it).",
+      "3": "Flip 1/2 to 2/1, then multiply.",
+      "4": { "problem": "2/5 ÷ 1/3", "lines": ["2/5 * 3/1", "6/5"], "answer": 1.2 }
+    },
+    "explainPrompt": "Why does dividing by a half make the answer bigger?",
+    "transferId": "FR-08", "tags": ["divide", "M-FRAC-DIV"]
+  },
+  {
+    "id": "FR-06", "skillId": "fractions", "difficulty": 3,
+    "statement": "5/6 ÷ 2/3", "latex": "\\frac{5}{6} \\div \\frac{2}{3}",
+    "verifier": "numeric", "answer": 1.25,
+    "objective": "Divide fractions and simplify",
+    "steps": [{ "id": 1, "objective": "Flip the second fraction and multiply", "exampleLine": "5/6 * 3/2" }],
+    "distractors": [{ "value": 0.5555555555555556, "misconception": "M-FRAC-DIV" }],
+    "hints": {
+      "1": "What is the 'flip' rule for dividing fractions?",
+      "2": "Keep the first fraction, change ÷ to ×, flip the second.",
+      "3": "Rewrite as 5/6 × 3/2, then multiply and simplify.",
+      "4": { "problem": "3/8 ÷ 3/4", "lines": ["3/8 * 4/3", "1/2"], "answer": 0.5 }
+    },
+    "explainPrompt": "Why do you flip the second fraction, not the first?",
+    "transferId": "FR-08", "tags": ["divide", "M-FRAC-DIV"]
+  },
+  {
+    "id": "FR-07", "skillId": "fractions", "difficulty": 3,
+    "statement": "5/2 - 3/4", "latex": "\\frac{5}{2} - \\frac{3}{4}",
+    "verifier": "numeric", "answer": 1.75,
+    "objective": "Subtract an improper fraction and a proper fraction",
+    "steps": [{ "id": 1, "objective": "Rewrite with a common denominator", "exampleLine": "10/4 - 3/4" }],
+    "distractors": [{ "value": -1, "misconception": "M-FRAC-ADD" }],
+    "hints": {
+      "1": "Can halves and quarters be compared directly?",
+      "2": "Change halves into quarters so the denominators match.",
+      "3": "Rewrite 5/2 as quarters, then subtract the numerators.",
+      "4": { "problem": "7/3 - 1/2", "lines": ["14/6 - 3/6", "11/6"], "answer": 1.8333333333333333 }
+    },
+    "explainPrompt": "Why did you turn halves into quarters?",
+    "transferId": "FR-08", "tags": ["subtract", "M-FRAC-ADD"]
+  },
+  {
+    "id": "FR-08", "skillId": "fractions", "difficulty": 2, "transferOnly": true,
+    "statement": "A recipe uses 2/3 of a cup of sugar. You make 3/4 of the recipe. Write one calculation and work out how much sugar you need.",
+    "verifier": "numeric", "answer": 0.5,
+    "objective": "Use fraction multiplication in a real situation",
+    "steps": [{ "id": 1, "objective": "Write the calculation", "exampleLine": "2/3 * 3/4" }],
+    "distractors": [{ "value": 1.4166666666666667, "misconception": "M-FRAC-ADD" }],
+    "hints": {
+      "1": "Is 'three quarters of' an addition or a multiplication?",
+      "2": "'Of' with fractions means multiply.",
+      "3": "Write 2/3 × 3/4 and multiply tops and bottoms.",
+      "4": { "problem": "1/2 cup, make 2/3 of the recipe", "lines": ["1/2 * 2/3", "1/3"], "answer": 0.3333333333333333 }
+    },
+    "explainPrompt": "Why does 'of' mean multiply?",
+    "tags": ["transfer", "word-problem"]
+  }
+]

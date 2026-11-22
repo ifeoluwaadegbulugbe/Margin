@@ -1,0 +1,67 @@
+{
+  "id": "algebra-foundations",
+  "name": "Algebra foundations",
+  "subject": "maths",
+  "skills": [
+    {
+      "id": "neg-numbers",
+      "name": "Negative numbers",
+      "short": "Negatives",
+      "description": "Add, subtract, multiply and divide with negative numbers.",
+      "objectives": ["Add and subtract integers including negatives", "Subtract a negative", "Multiply and divide negatives"],
+      "prerequisites": [],
+      "difficulty": 1,
+      "minutes": 6,
+      "x": 14,
+      "y": 70
+    },
+    {
+      "id": "order-ops",
+      "name": "Order of operations",
+      "short": "Order of ops",
+      "description": "Brackets, powers, multiply and divide, then add and subtract.",
+      "objectives": ["Evaluate expressions in the right order", "Handle brackets and powers", "Spot the -2² trap"],
+      "prerequisites": ["neg-numbers"],
+      "difficulty": 1,
+      "minutes": 6,
+      "x": 36,
+      "y": 34
+    },
+    {
+      "id": "fractions",
+      "name": "Fraction operations",
+      "short": "Fractions",
+      "description": "Add, subtract, multiply and divide fractions, and simplify.",
+      "objectives": ["Add with unlike denominators", "Multiply and simplify", "Divide by flipping the second fraction"],
+      "prerequisites": ["neg-numbers"],
+      "difficulty": 2,
+      "minutes": 8,
+      "x": 42,
+      "y": 82
+    },
+    {
+      "id": "two-step",
+      "name": "One- and two-step equations",
+      "short": "Two-step",
+      "description": "Solve equations by undoing operations on both sides.",
+      "objectives": ["Use inverse operations on both sides", "Undo operations in reverse order", "Check by substitution"],
+      "prerequisites": ["neg-numbers", "order-ops"],
+      "difficulty": 2,
+      "minutes": 8,
+      "x": 64,
+      "y": 44
+    },
+    {
+      "id": "multi-step",
+      "name": "Brackets and variables on both sides",
+      "short": "Multi-step",
+      "description": "Expand brackets, collect x terms on one side, then solve.",
+      "objectives": ["Expand brackets correctly", "Collect x terms on one side", "Solve and check"],
+      "prerequisites": ["two-step", "fractions"],
+      "difficulty": 3,
+      "minutes": 10,
+      "x": 86,
+      "y": 22
+    }
+  ]
+}
