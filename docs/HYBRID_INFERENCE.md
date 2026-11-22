@@ -22,7 +22,7 @@ student event → verifier (deterministic) → buildPacket → force-cloud?
 → on failure: one retry with the rejection reason → authored fallback, labelled SCRIPTED
 ```
 
-- Timeouts: 8 s for the device path and 15 s for forced cloud. A network error gets one retry after 1.5 s. App Check errors are not retried and show a diagnostic.
+- Timeouts: 15 s on the device path in auto mode (90 s with "Always on-device"), 15 s in the cloud. A slow or rejected on-device reply gets one cloud rescue. The Learning Guide waits 20 s for its configured model, then retries with gemini-3.5-flash-lite. App Check errors are not retried and show a diagnostic.
 - Each `runTutor` call increments a request id. A reply that arrives after a newer request has started is discarded.
 - Each problem allows at most 30 Scribble calls. After that, Scribble uses authored hints only.
 
