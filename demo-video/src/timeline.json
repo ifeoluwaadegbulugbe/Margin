@@ -1,6 +1,6 @@
 {
  "target": "live",
- "total": 138.89999999999998,
+ "total": 149.7,
  "beats": [
   {
    "kind": "problem",
@@ -131,12 +131,12 @@
    "cap": "Short sets of three challenges.",
    "cursor": [
     [
-     1.0,
+     1,
      "open"
     ]
    ],
    "click": [
-    2.0
+    2
    ],
    "start": 34.2
   },
@@ -189,7 +189,7 @@
   },
   {
    "clip": "type-line2",
-   "d": 2.0,
+   "d": 2,
    "play": [
     0.1,
     1.5
@@ -293,7 +293,7 @@
   },
   {
    "clip": "ws-explain",
-   "d": 3.0,
+   "d": 3,
    "kick": "EXPLAIN",
    "cap": "Correct. Now: why does it work?",
    "good": true,
@@ -301,7 +301,7 @@
   },
   {
    "clip": "type-explain",
-   "d": 3.0,
+   "d": 3,
    "play": [
     0.1,
     2.6
@@ -314,7 +314,7 @@
    "clip": "stickers",
    "d": 3.6,
    "play": [
-    0.0,
+    0,
     1.3
    ],
    "kick": "REWARDS",
@@ -326,7 +326,7 @@
    "clip": "levelup",
    "d": 2.6,
    "play": [
-    0.0,
+    0,
     0.9
    ],
    "kick": "REWARDS",
@@ -356,7 +356,7 @@
   },
   {
    "clip": "settings-log",
-   "d": 6.0,
+   "d": 6,
    "kick": "THE LOOP",
    "cap": "Then it hands Scribble a watch-list. Every AI call is logged with its real source.",
    "ring": {
@@ -366,12 +366,44 @@
    "start": 97.9
   },
   {
-   "kind": "ondevice",
-   "d": 9,
+   "kind": "rec",
+   "needs": "recording",
+   "from": 0.3,
+   "d": 3.4,
    "kick": "ON-DEVICE",
-   "cap": "On a capable laptop, Scribble runs privately with Gemini Nano, even offline.",
-   "recording": false,
+   "cap": "Our own screen recording: the test page sends a Scribble prompt to Gemini Nano.",
    "start": 103.9
+  },
+  {
+   "kind": "rec",
+   "needs": "recording",
+   "from": 59.4,
+   "d": 5,
+   "skip": "57 s of on-device thinking cut",
+   "kick": "ON-DEVICE",
+   "cap": "inferenceSource: on_device. It ran on the laptop itself.",
+   "good": true,
+   "start": 107.3
+  },
+  {
+   "kind": "rec",
+   "needs": "recording",
+   "from": 66.6,
+   "d": 4.4,
+   "kick": "OFFLINE",
+   "cap": "Now with Wi-Fi switched off, run it again.",
+   "start": 112.3
+  },
+  {
+   "kind": "rec",
+   "needs": "recording",
+   "from": 103.4,
+   "d": 7,
+   "skip": "32 s of on-device thinking cut",
+   "kick": "OFFLINE",
+   "cap": "Still on_device with no internet. Raw test output, before the app\u2019s safety checks.",
+   "good": true,
+   "start": 116.7
   },
   {
    "clip": "settings",
@@ -382,38 +414,38 @@
     "at": "engine",
     "from": 0.5
    },
-   "start": 112.9
+   "start": 123.7
   },
   {
    "clip": "rewards",
-   "d": 3.0,
+   "d": 3,
    "kick": "COLLECTION",
    "cap": "A sticker book, a level and mastery stamps.",
-   "start": 116.7
+   "start": 127.5
   },
   {
    "clip": "notebook",
    "d": 2.8,
    "kick": "COLLECTION",
    "cap": "Every finished page goes into your notebook.",
-   "start": 119.7
+   "start": 130.5
   },
   {
    "kind": "phone",
    "d": 4.4,
    "kick": "PHONE",
    "cap": "The same notebook on a phone.",
-   "start": 122.5
+   "start": 133.3
   },
   {
    "kind": "stack",
    "d": 6.5,
-   "start": 126.9
+   "start": 137.7
   },
   {
    "kind": "end",
    "d": 5.5,
-   "start": 133.4
+   "start": 144.2
   }
  ],
  "clips": {

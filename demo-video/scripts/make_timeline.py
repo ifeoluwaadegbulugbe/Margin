@@ -16,9 +16,11 @@ for b in beats:
     if "clip" in b and b["clip"] not in clips:
         print("skipping", b["clip"])
         continue
+    if b.get("needs") == "recording" and not has_recording:
+        continue
+    if b.get("needs") == "no-recording" and has_recording:
+        continue
     b = dict(b)
-    if b.get("kind") == "ondevice":
-        b["recording"] = has_recording
     b["start"] = round(t, 3)
     t += b["d"]
     out.append(b)

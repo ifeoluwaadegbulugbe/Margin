@@ -30,7 +30,7 @@ const MONO = "'JetBrains Mono', monospace";
 type Point = { x: number; y: number; w: number; h: number } | null;
 type Clip = { frames: string[]; url: string; points: Record<string, Point> };
 type Beat = {
-  kind?: string; clip?: string; d: number; start: number; kick?: string; cap?: string; play?: number[]; recording?: boolean;
+  kind?: string; clip?: string; d: number; start: number; kick?: string; cap?: string; play?: number[]; from?: number; skip?: string;
   cursor?: [number, string][]; click?: number[]; zoom?: { to: number; at: string; from?: number }; ring?: { at: string; from: number };
 };
 const CLIPS = timeline.clips as unknown as Record<string, Clip>;
@@ -239,16 +239,6 @@ const LogoScene: React.FC = () => {
 const OnDevice: React.FC<{ beat: Beat }> = ({ beat }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  if (beat.recording) {
-    return (
-      <AbsoluteFill style={{ background: PAPER }}>
-        <Window url="lodestar-f3359.web.app/dev/spike/">
-          <OffthreadVideo src={staticFile("ondevice.mp4")} muted style={{ width: "100%", height: "100%", objectFit: "contain", background: "#fff" }} />
-        </Window>
-        <Caption kick={beat.kick} cap={beat.cap} frame={frame} d={beat.d} />
-      </AbsoluteFill>
-    );
-  }
   const row = (at: number, mode: string, src: string, ms: string, color: string, note: string) => {
     const p = spring({ frame: frame - T(at), fps, config: { damping: 16 } });
     return (
@@ -269,6 +259,33 @@ const OnDevice: React.FC<{ beat: Beat }> = ({ beat }) => {
       </div>
       {row(0.6, "PREFER_ON_DEVICE", "on_device", "27.8 s", "#1c7a5c", "Gemini Nano in Chrome, running on the laptop itself.")}
       {row(1.4, "ONLY_IN_CLOUD", "in_cloud", "3.3 s", "#23709e", "Gemini through Firebase AI Logic, in the cloud.")}
+      <Caption kick={beat.kick} cap={beat.cap} frame={frame} d={beat.d} />
+    </AbsoluteFill>
+  );
+};
+
+/**
+ * The owner's own screen recording of the on-device test (public/ondevice.mp4, 1920 x 1080).
+ * Chrome's tab strip and address bar are cropped off, so none of the owner's tabs appear.
+ * Long waits are cut between beats, and each cut is labelled with how much time was removed.
+ */
+const REC_CROP = { x: 192, y: 120, w: 1536 };
+const Rec: React.FC<{ beat: Beat }> = ({ beat }) => {
+  const frame = useCurrentFrame();
+  const scale = WIN_W / REC_CROP.w;
+  const skipO = interpolate(frame, [0, 6, T(2.2), T(2.6)], [0, 1, 1, 0], clamp);
+  return (
+    <AbsoluteFill style={{ background: PAPER }}>
+      <Window url="localhost:3000/dev/spike/">
+        <div style={{ position: "absolute", inset: 0, background: PAPER }} />
+        <OffthreadVideo src={staticFile("ondevice.mp4")} muted trimBefore={Math.round((beat.from ?? 0) * FPS)}
+          style={{ position: "absolute", width: 1920 * scale, height: 1080 * scale, left: -REC_CROP.x * scale, top: -REC_CROP.y * scale, maxWidth: "none" }} />
+      </Window>
+      {beat.skip && (
+        <div style={{ position: "absolute", top: 76, right: WIN_X + 28, opacity: skipO, background: INK, color: "#fff", borderRadius: 12, padding: "10px 18px", fontFamily: TEXT, fontSize: 24, fontWeight: 600, boxShadow: "0 8px 20px rgba(40,36,59,.25)" }}>
+          ⏩ {beat.skip}
+        </div>
+      )}
       <Caption kick={beat.kick} cap={beat.cap} frame={frame} d={beat.d} />
     </AbsoluteFill>
   );
@@ -350,6 +367,7 @@ const BeatView: React.FC<{ beat: Beat }> = ({ beat }) => {
   if (beat.kind === "problem") body = <Problem />;
   else if (beat.kind === "logo") body = <LogoScene />;
   else if (beat.kind === "ondevice") body = <OnDevice beat={beat} />;
+  else if (beat.kind === "rec") body = <Rec beat={beat} />;
   else if (beat.kind === "phone") body = <Phones beat={beat} />;
   else if (beat.kind === "stack") body = <Stack />;
   else if (beat.kind === "end") body = <End />;
