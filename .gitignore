@@ -9,3 +9,10 @@ next-env.d.ts
 firebase-debug.log
 .DS_Store
 .claude/settings.local.json
+
+# demo video: dependencies, captured footage and renders stay local
+demo-video/node_modules/
+demo-video/out/
+demo-video/public/footage/
+demo-video/public/*.mp4
+demo-video/public/audio.wav

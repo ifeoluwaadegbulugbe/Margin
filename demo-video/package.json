@@ -1,0 +1,24 @@
+{
+  "name": "margin-demo-video",
+  "private": true,
+  "scripts": {
+    "capture": "node scripts/capture.mjs",
+    "timeline": "python scripts/make_timeline.py",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts MarginDemo out/margin-demo.mp4"
+  },
+  "dependencies": {
+    "@fontsource/caveat": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0",
+    "@fontsource/plus-jakarta-sans": "5.3.0",
+    "@remotion/cli": "4.0.533",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.533"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.0",
+    "typescript": "5.9.3"
+  }
+}

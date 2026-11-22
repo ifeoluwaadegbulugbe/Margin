@@ -1,0 +1,1174 @@
+{
+ "target": "live",
+ "total": 138.89999999999998,
+ "beats": [
+  {
+   "kind": "problem",
+   "d": 7.5,
+   "start": 0.0
+  },
+  {
+   "kind": "logo",
+   "d": 4.5,
+   "start": 7.5
+  },
+  {
+   "clip": "landing",
+   "d": 3.6,
+   "kick": "START",
+   "cap": "A maths notebook that never hands you the answer.",
+   "cursor": [
+    [
+     1.2,
+     "start"
+    ]
+   ],
+   "click": [
+    2.9
+   ],
+   "start": 12.0
+  },
+  {
+   "clip": "onb-welcome",
+   "d": 2.8,
+   "kick": "START",
+   "cap": "Meet Scribble, your guide.",
+   "cursor": [
+    [
+     1.2,
+     "go"
+    ]
+   ],
+   "click": [
+    2.2
+   ],
+   "start": 15.6
+  },
+  {
+   "clip": "onb-level",
+   "d": 2.6,
+   "kick": "START",
+   "cap": "Pick your level, and Scribble pitches its questions to match.",
+   "cursor": [
+    [
+     0.9,
+     "year"
+    ]
+   ],
+   "click": [
+    1.8
+   ],
+   "start": 18.4
+  },
+  {
+   "clip": "warmup",
+   "d": 2.8,
+   "play": [
+    0.3,
+    1.2
+   ],
+   "kick": "WARM-UP",
+   "cap": "A quick warm-up finds what you already know.",
+   "cursor": [
+    [
+     1.6,
+     "submit"
+    ]
+   ],
+   "click": [
+    2.3
+   ],
+   "start": 21.0
+  },
+  {
+   "clip": "planning",
+   "d": 2.2,
+   "kick": "CLOUD",
+   "cap": "The Learning Guide plans your first pages in the cloud.",
+   "start": 23.8
+  },
+  {
+   "clip": "desk",
+   "d": 4.8,
+   "kick": "HOME",
+   "cap": "Your desk: the next page, and a note from your learning guide.",
+   "cursor": [
+    [
+     1.3,
+     "guide"
+    ],
+    [
+     3.3,
+     "open"
+    ]
+   ],
+   "ring": {
+    "at": "guide",
+    "from": 0.9
+   },
+   "start": 26.0
+  },
+  {
+   "clip": "explore",
+   "d": 3.4,
+   "kick": "EXPLORE",
+   "cap": "Five topics on one path to solving equations.",
+   "cursor": [
+    [
+     1.6,
+     "practise"
+    ]
+   ],
+   "click": [
+    2.7
+   ],
+   "start": 30.8
+  },
+  {
+   "clip": "sheet",
+   "d": 2.6,
+   "kick": "EXPLORE",
+   "cap": "Short sets of three challenges.",
+   "cursor": [
+    [
+     1.0,
+     "open"
+    ]
+   ],
+   "click": [
+    2.0
+   ],
+   "start": 34.2
+  },
+  {
+   "clip": "ws-orient",
+   "d": 3.4,
+   "kick": "NOTEBOOK",
+   "cap": "A notebook page, not a chat window.",
+   "cursor": [
+    [
+     2.2,
+     "line"
+    ]
+   ],
+   "click": [
+    2.9
+   ],
+   "start": 36.8
+  },
+  {
+   "clip": "type-line1",
+   "d": 2.4,
+   "play": [
+    0.1,
+    1.9
+   ],
+   "kick": "NOTEBOOK",
+   "cap": "The student works it out, one line at a time.",
+   "start": 40.2
+  },
+  {
+   "clip": "line1-thinking",
+   "d": 0.9,
+   "kick": "NOTEBOOK",
+   "cap": "The student works it out, one line at a time.",
+   "start": 42.6
+  },
+  {
+   "clip": "ws-line1",
+   "d": 3.6,
+   "kick": "MATHS CHECKER",
+   "cap": "A maths engine checks every line. Never the AI.",
+   "zoom": {
+    "to": 1.22,
+    "at": "work",
+    "from": 0.3
+   },
+   "good": true,
+   "start": 43.5
+  },
+  {
+   "clip": "type-line2",
+   "d": 2.0,
+   "play": [
+    0.1,
+    1.5
+   ],
+   "kick": "MATHS CHECKER",
+   "cap": "Then a classic slip: the sign.",
+   "start": 47.1
+  },
+  {
+   "clip": "line2-thinking",
+   "d": 0.8,
+   "kick": "MATHS CHECKER",
+   "cap": "Then a classic slip: the sign.",
+   "start": 49.1
+  },
+  {
+   "clip": "ws-wrong",
+   "d": 6.2,
+   "kick": "SCRIBBLE",
+   "cap": "The line changed the answer. Scribble asks a question instead of correcting it.",
+   "ring": {
+    "at": "note",
+    "from": 1.6
+   },
+   "start": 49.9
+  },
+  {
+   "clip": "type-ask",
+   "d": 2.4,
+   "play": [
+    0.1,
+    1.9
+   ],
+   "kick": "SCRIBBLE",
+   "cap": "\u201cJust tell me the answer.\u201d",
+   "start": 56.1
+  },
+  {
+   "clip": "ask-thinking",
+   "d": 0.8,
+   "kick": "SCRIBBLE",
+   "cap": "\u201cJust tell me the answer.\u201d",
+   "start": 58.5
+  },
+  {
+   "clip": "ws-ask",
+   "d": 3.6,
+   "kick": "SCRIBBLE",
+   "cap": "It won't. It asks a smaller question instead.",
+   "ring": {
+    "at": "note",
+    "from": 0.4
+   },
+   "start": 59.3
+  },
+  {
+   "clip": "ws-hint",
+   "d": 4.2,
+   "kick": "HINTS",
+   "cap": "Hints land on the page as notes, and cost a little XP.",
+   "ring": {
+    "at": "hints",
+    "from": 0.5
+   },
+   "start": 62.9
+  },
+  {
+   "clip": "type-fix",
+   "d": 1.6,
+   "play": [
+    0.1,
+    1.2
+   ],
+   "kick": "SELF-CORRECTION",
+   "cap": "The student fixes their own mistake.",
+   "start": 67.1
+  },
+  {
+   "clip": "ws-solved",
+   "d": 3.6,
+   "kick": "SELF-CORRECTION",
+   "cap": "Every line balanced, and x is on its own.",
+   "zoom": {
+    "to": 1.2,
+    "at": "work",
+    "from": 0.3
+   },
+   "good": true,
+   "start": 68.7
+  },
+  {
+   "clip": "type-final",
+   "d": 1.2,
+   "play": [
+    0.1,
+    0.8
+   ],
+   "kick": "CHECK",
+   "cap": "The answer goes in the box.",
+   "start": 72.3
+  },
+  {
+   "clip": "ws-explain",
+   "d": 3.0,
+   "kick": "EXPLAIN",
+   "cap": "Correct. Now: why does it work?",
+   "good": true,
+   "start": 73.5
+  },
+  {
+   "clip": "type-explain",
+   "d": 3.0,
+   "play": [
+    0.1,
+    2.6
+   ],
+   "kick": "EXPLAIN",
+   "cap": "Explaining earns more than any hint.",
+   "start": 76.5
+  },
+  {
+   "clip": "stickers",
+   "d": 3.6,
+   "play": [
+    0.0,
+    1.3
+   ],
+   "kick": "REWARDS",
+   "cap": "Rewards follow reasoning: stickers, XP and levels.",
+   "good": true,
+   "start": 79.5
+  },
+  {
+   "clip": "levelup",
+   "d": 2.6,
+   "play": [
+    0.0,
+    0.9
+   ],
+   "kick": "REWARDS",
+   "cap": "Rewards follow reasoning: stickers, XP and levels.",
+   "start": 83.1
+  },
+  {
+   "clip": "complete",
+   "d": 3.8,
+   "kick": "REWARDS",
+   "cap": "XP comes only from balanced lines, fixes and explanations. Never clicks.",
+   "start": 85.7
+  },
+  {
+   "clip": "complete-scroll",
+   "d": 3.6,
+   "kick": "CLOUD",
+   "cap": "Then the Learning Guide reads the session, in the cloud.",
+   "start": 89.5
+  },
+  {
+   "clip": "progress",
+   "d": 4.8,
+   "kick": "LEARNING GUIDE",
+   "cap": "It spots the habit, with evidence, and plans what comes next.",
+   "start": 93.1
+  },
+  {
+   "clip": "settings-log",
+   "d": 6.0,
+   "kick": "THE LOOP",
+   "cap": "Then it hands Scribble a watch-list. Every AI call is logged with its real source.",
+   "ring": {
+    "at": "watch",
+    "from": 0.6
+   },
+   "start": 97.9
+  },
+  {
+   "kind": "ondevice",
+   "d": 9,
+   "kick": "ON-DEVICE",
+   "cap": "On a capable laptop, Scribble runs privately with Gemini Nano, even offline.",
+   "recording": false,
+   "start": 103.9
+  },
+  {
+   "clip": "settings",
+   "d": 3.8,
+   "kick": "HYBRID",
+   "cap": "Fast device: on-device. Slow device: the cloud. Always labelled.",
+   "ring": {
+    "at": "engine",
+    "from": 0.5
+   },
+   "start": 112.9
+  },
+  {
+   "clip": "rewards",
+   "d": 3.0,
+   "kick": "COLLECTION",
+   "cap": "A sticker book, a level and mastery stamps.",
+   "start": 116.7
+  },
+  {
+   "clip": "notebook",
+   "d": 2.8,
+   "kick": "COLLECTION",
+   "cap": "Every finished page goes into your notebook.",
+   "start": 119.7
+  },
+  {
+   "kind": "phone",
+   "d": 4.4,
+   "kick": "PHONE",
+   "cap": "The same notebook on a phone.",
+   "start": 122.5
+  },
+  {
+   "kind": "stack",
+   "d": 6.5,
+   "start": 126.9
+  },
+  {
+   "kind": "end",
+   "d": 5.5,
+   "start": 133.4
+  }
+ ],
+ "clips": {
+  "landing": {
+   "frames": [
+    "footage/live/landing-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/",
+   "points": {
+    "start": {
+     "x": 147,
+     "y": 513,
+     "w": 161,
+     "h": 52
+    }
+   }
+  },
+  "onb-welcome": {
+   "frames": [
+    "footage/live/onb-welcome-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/onboarding/",
+   "points": {
+    "go": {
+     "x": 460,
+     "y": 550,
+     "w": 118,
+     "h": 52
+    }
+   }
+  },
+  "onb-subjects": {
+   "frames": [
+    "footage/live/onb-subjects-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/onboarding/",
+   "points": {
+    "maths": {
+     "x": 527,
+     "y": 340,
+     "w": 253,
+     "h": 140
+    },
+    "go": {
+     "x": 454,
+     "y": 616,
+     "w": 106,
+     "h": 44
+    }
+   }
+  },
+  "onb-level": {
+   "frames": [
+    "footage/live/onb-level-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/onboarding/",
+   "points": {
+    "year": {
+     "x": 858,
+     "y": 373,
+     "w": 122,
+     "h": 80
+    },
+    "go": {
+     "x": 454,
+     "y": 577,
+     "w": 106,
+     "h": 44
+    }
+   }
+  },
+  "warmup": {
+   "frames": [
+    "footage/live/warmup-000.jpg",
+    "footage/live/warmup-001.jpg",
+    "footage/live/warmup-002.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/calibrate/",
+   "points": {
+    "input": {
+     "x": 590,
+     "y": 471,
+     "w": 380,
+     "h": 48
+    },
+    "submit": {
+     "x": 834,
+     "y": 469,
+     "w": 91,
+     "h": 44
+    }
+   }
+  },
+  "planning": {
+   "frames": [
+    "footage/live/planning-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/calibrate/",
+   "points": {}
+  },
+  "desk": {
+   "frames": [
+    "footage/live/desk-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/desk/",
+   "points": {
+    "open": {
+     "x": 403,
+     "y": 477,
+     "w": 230,
+     "h": 48
+    },
+    "guide": {
+     "x": 1041,
+     "y": 720,
+     "w": 399,
+     "h": 311
+    }
+   }
+  },
+  "explore": {
+   "frames": [
+    "footage/live/explore-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/explore/",
+   "points": {
+    "practise": {
+     "x": 366,
+     "y": 811,
+     "w": 170,
+     "h": 44
+    },
+    "path": {
+     "x": 748,
+     "y": 387,
+     "w": 927,
+     "h": 173
+    }
+   }
+  },
+  "sheet": {
+   "frames": [
+    "footage/live/sheet-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/explore/",
+   "points": {
+    "open": {
+     "x": 632,
+     "y": 627,
+     "w": 491,
+     "h": 52
+    }
+   }
+  },
+  "ws-orient": {
+   "frames": [
+    "footage/live/ws-orient-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "line": {
+     "x": 519,
+     "y": 534,
+     "w": 377,
+     "h": 48
+    },
+    "problem": {
+     "x": 557,
+     "y": 309,
+     "w": 591,
+     "h": 160
+    }
+   }
+  },
+  "type-line1": {
+   "frames": [
+    "footage/live/type-line1-000.jpg",
+    "footage/live/type-line1-001.jpg",
+    "footage/live/type-line1-002.jpg",
+    "footage/live/type-line1-003.jpg",
+    "footage/live/type-line1-004.jpg",
+    "footage/live/type-line1-005.jpg",
+    "footage/live/type-line1-006.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "input": {
+     "x": 519,
+     "y": 534,
+     "w": 377,
+     "h": 48
+    }
+   }
+  },
+  "line1-thinking": {
+   "frames": [
+    "footage/live/line1-thinking-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {}
+  },
+  "ws-line1": {
+   "frames": [
+    "footage/live/ws-line1-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "line": {
+     "x": 519,
+     "y": 568,
+     "w": 377,
+     "h": 48
+    },
+    "note": {
+     "x": 1075,
+     "y": 283,
+     "w": 347,
+     "h": 171
+    },
+    "work": {
+     "x": 557,
+     "y": 513,
+     "w": 591,
+     "h": 199
+    },
+    "hint": {
+     "x": 727,
+     "y": 767,
+     "w": 218,
+     "h": 36
+    },
+    "reply": {
+     "x": 1049,
+     "y": 660,
+     "w": 303,
+     "h": 44
+    }
+   }
+  },
+  "type-line2": {
+   "frames": [
+    "footage/live/type-line2-000.jpg",
+    "footage/live/type-line2-001.jpg",
+    "footage/live/type-line2-002.jpg",
+    "footage/live/type-line2-003.jpg",
+    "footage/live/type-line2-004.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "input": {
+     "x": 519,
+     "y": 568,
+     "w": 377,
+     "h": 48
+    }
+   }
+  },
+  "line2-thinking": {
+   "frames": [
+    "footage/live/line2-thinking-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {}
+  },
+  "ws-wrong": {
+   "frames": [
+    "footage/live/ws-wrong-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "line": {
+     "x": 519,
+     "y": 632,
+     "w": 377,
+     "h": 48
+    },
+    "note": {
+     "x": 1075,
+     "y": 269,
+     "w": 347,
+     "h": 144
+    },
+    "work": {
+     "x": 557,
+     "y": 545,
+     "w": 591,
+     "h": 263
+    },
+    "hint": {
+     "x": 727,
+     "y": 831,
+     "w": 218,
+     "h": 36
+    },
+    "reply": {
+     "x": 1049,
+     "y": 660,
+     "w": 303,
+     "h": 44
+    },
+    "wrong": {
+     "x": 581,
+     "y": 551,
+     "w": 501,
+     "h": 90
+    }
+   }
+  },
+  "type-ask": {
+   "frames": [
+    "footage/live/type-ask-000.jpg",
+    "footage/live/type-ask-001.jpg",
+    "footage/live/type-ask-002.jpg",
+    "footage/live/type-ask-003.jpg",
+    "footage/live/type-ask-004.jpg",
+    "footage/live/type-ask-005.jpg",
+    "footage/live/type-ask-006.jpg",
+    "footage/live/type-ask-007.jpg",
+    "footage/live/type-ask-008.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "input": {
+     "x": 1049,
+     "y": 660,
+     "w": 303,
+     "h": 44
+    }
+   }
+  },
+  "ask-thinking": {
+   "frames": [
+    "footage/live/ask-thinking-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {}
+  },
+  "ws-ask": {
+   "frames": [
+    "footage/live/ws-ask-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "line": {
+     "x": 519,
+     "y": 632,
+     "w": 377,
+     "h": 48
+    },
+    "note": {
+     "x": 1075,
+     "y": 256,
+     "w": 347,
+     "h": 117
+    },
+    "work": {
+     "x": 557,
+     "y": 545,
+     "w": 591,
+     "h": 263
+    },
+    "hint": {
+     "x": 727,
+     "y": 831,
+     "w": 218,
+     "h": 36
+    },
+    "reply": {
+     "x": 1049,
+     "y": 660,
+     "w": 303,
+     "h": 44
+    }
+   }
+  },
+  "ws-hint": {
+   "frames": [
+    "footage/live/ws-hint-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "line": {
+     "x": 519,
+     "y": 767,
+     "w": 377,
+     "h": 48
+    },
+    "note": {
+     "x": 1075,
+     "y": 256,
+     "w": 347,
+     "h": 117
+    },
+    "work": {
+     "x": 557,
+     "y": 680,
+     "w": 591,
+     "h": 263
+    },
+    "hint": {
+     "x": 728,
+     "y": 966,
+     "w": 216,
+     "h": 36
+    },
+    "reply": {
+     "x": 1049,
+     "y": 660,
+     "w": 303,
+     "h": 44
+    },
+    "hints": {
+     "x": 557,
+     "y": 469,
+     "w": 591,
+     "h": 111
+    }
+   }
+  },
+  "type-fix": {
+   "frames": [
+    "footage/live/type-fix-000.jpg",
+    "footage/live/type-fix-001.jpg",
+    "footage/live/type-fix-002.jpg",
+    "footage/live/type-fix-003.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "input": {
+     "x": 519,
+     "y": 767,
+     "w": 377,
+     "h": 48
+    }
+   }
+  },
+  "fix-thinking": {
+   "frames": [
+    "footage/live/fix-thinking-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {}
+  },
+  "solved-thinking": {
+   "frames": [
+    "footage/live/solved-thinking-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {}
+  },
+  "ws-solved": {
+   "frames": [
+    "footage/live/ws-solved-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "line": {
+     "x": 519,
+     "y": 776,
+     "w": 377,
+     "h": 48
+    },
+    "note": {
+     "x": 1075,
+     "y": 279,
+     "w": 347,
+     "h": 171
+    },
+    "work": {
+     "x": 557,
+     "y": 661,
+     "w": 591,
+     "h": 319
+    },
+    "hint": {
+     "x": 728,
+     "y": 975,
+     "w": 216,
+     "h": 36
+    },
+    "reply": {
+     "x": 1049,
+     "y": 656,
+     "w": 303,
+     "h": 44
+    },
+    "final": {
+     "x": 449,
+     "y": 882,
+     "w": 112,
+     "h": 44
+    }
+   }
+  },
+  "type-final": {
+   "frames": [
+    "footage/live/type-final-000.jpg",
+    "footage/live/type-final-001.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "input": {
+     "x": 449,
+     "y": 636,
+     "w": 112,
+     "h": 44
+    }
+   }
+  },
+  "ws-explain": {
+   "frames": [
+    "footage/live/ws-explain-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "line": null,
+    "note": {
+     "x": 1075,
+     "y": 256,
+     "w": 347,
+     "h": 117
+    },
+    "work": {
+     "x": 557,
+     "y": 543,
+     "w": 591,
+     "h": 259
+    },
+    "hint": null,
+    "reply": {
+     "x": 1049,
+     "y": 660,
+     "w": 303,
+     "h": 44
+    }
+   }
+  },
+  "type-explain": {
+   "frames": [
+    "footage/live/type-explain-000.jpg",
+    "footage/live/type-explain-001.jpg",
+    "footage/live/type-explain-002.jpg",
+    "footage/live/type-explain-003.jpg",
+    "footage/live/type-explain-004.jpg",
+    "footage/live/type-explain-005.jpg",
+    "footage/live/type-explain-006.jpg",
+    "footage/live/type-explain-007.jpg",
+    "footage/live/type-explain-008.jpg",
+    "footage/live/type-explain-009.jpg",
+    "footage/live/type-explain-010.jpg",
+    "footage/live/type-explain-011.jpg",
+    "footage/live/type-explain-012.jpg",
+    "footage/live/type-explain-013.jpg",
+    "footage/live/type-explain-014.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "input": {
+     "x": 1049,
+     "y": 660,
+     "w": 303,
+     "h": 44
+    }
+   }
+  },
+  "explain-thinking": {
+   "frames": [
+    "footage/live/explain-thinking-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {}
+  },
+  "ws-transfer": {
+   "frames": [
+    "footage/live/ws-transfer-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {}
+  },
+  "ws-complete": {
+   "frames": [
+    "footage/live/ws-complete-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/learn/",
+   "points": {
+    "next": {
+     "x": 557,
+     "y": 902,
+     "w": 184,
+     "h": 52
+    }
+   }
+  },
+  "stickers": {
+   "frames": [
+    "footage/live/stickers-000.jpg",
+    "footage/live/stickers-001.jpg",
+    "footage/live/stickers-002.jpg",
+    "footage/live/stickers-003.jpg",
+    "footage/live/stickers-004.jpg",
+    "footage/live/stickers-005.jpg",
+    "footage/live/stickers-006.jpg",
+    "footage/live/stickers-007.jpg",
+    "footage/live/stickers-008.jpg",
+    "footage/live/stickers-009.jpg",
+    "footage/live/stickers-010.jpg",
+    "footage/live/stickers-011.jpg",
+    "footage/live/stickers-012.jpg",
+    "footage/live/stickers-013.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/complete/",
+   "points": {}
+  },
+  "levelup": {
+   "frames": [
+    "footage/live/levelup-000.jpg",
+    "footage/live/levelup-001.jpg",
+    "footage/live/levelup-002.jpg",
+    "footage/live/levelup-003.jpg",
+    "footage/live/levelup-004.jpg",
+    "footage/live/levelup-005.jpg",
+    "footage/live/levelup-006.jpg",
+    "footage/live/levelup-007.jpg",
+    "footage/live/levelup-008.jpg",
+    "footage/live/levelup-009.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/complete/",
+   "points": {}
+  },
+  "complete": {
+   "frames": [
+    "footage/live/complete-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/complete/",
+   "points": {}
+  },
+  "complete-scroll": {
+   "frames": [
+    "footage/live/complete-scroll-000.jpg",
+    "footage/live/complete-scroll-001.jpg",
+    "footage/live/complete-scroll-002.jpg",
+    "footage/live/complete-scroll-003.jpg",
+    "footage/live/complete-scroll-004.jpg",
+    "footage/live/complete-scroll-005.jpg",
+    "footage/live/complete-scroll-006.jpg",
+    "footage/live/complete-scroll-007.jpg",
+    "footage/live/complete-scroll-008.jpg",
+    "footage/live/complete-scroll-009.jpg",
+    "footage/live/complete-scroll-010.jpg",
+    "footage/live/complete-scroll-011.jpg",
+    "footage/live/complete-scroll-012.jpg",
+    "footage/live/complete-scroll-013.jpg",
+    "footage/live/complete-scroll-014.jpg",
+    "footage/live/complete-scroll-015.jpg",
+    "footage/live/complete-scroll-016.jpg",
+    "footage/live/complete-scroll-017.jpg",
+    "footage/live/complete-scroll-018.jpg",
+    "footage/live/complete-scroll-019.jpg",
+    "footage/live/complete-scroll-020.jpg",
+    "footage/live/complete-scroll-021.jpg",
+    "footage/live/complete-scroll-022.jpg",
+    "footage/live/complete-scroll-023.jpg",
+    "footage/live/complete-scroll-024.jpg",
+    "footage/live/complete-scroll-025.jpg",
+    "footage/live/complete-scroll-026.jpg",
+    "footage/live/complete-scroll-027.jpg",
+    "footage/live/complete-scroll-028.jpg",
+    "footage/live/complete-scroll-029.jpg",
+    "footage/live/complete-scroll-030.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/complete/",
+   "points": {
+    "next": {
+     "x": 386,
+     "y": 694,
+     "w": 195,
+     "h": 44
+    }
+   }
+  },
+  "progress": {
+   "frames": [
+    "footage/live/progress-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/progress/",
+   "points": {}
+  },
+  "settings": {
+   "frames": [
+    "footage/live/settings-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/settings/",
+   "points": {
+    "engine": {
+     "x": 916,
+     "y": 229,
+     "w": 600,
+     "h": 24
+    }
+   }
+  },
+  "settings-log": {
+   "frames": [
+    "footage/live/settings-log-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/settings/",
+   "points": {
+    "watch": {
+     "x": 916,
+     "y": 199,
+     "w": 600,
+     "h": 65
+    },
+    "log": {
+     "x": 916,
+     "y": 729,
+     "w": 600,
+     "h": 768
+    }
+   }
+  },
+  "rewards": {
+   "frames": [
+    "footage/live/rewards-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/rewards/",
+   "points": {}
+  },
+  "notebook": {
+   "frames": [
+    "footage/live/notebook-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/notebook/",
+   "points": {}
+  },
+  "phone-desk": {
+   "frames": [
+    "footage/live/phone-desk-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/desk/",
+   "points": {}
+  },
+  "phone-notebook": {
+   "frames": [
+    "footage/live/phone-notebook-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/notebook/",
+   "points": {}
+  },
+  "phone-rewards": {
+   "frames": [
+    "footage/live/phone-rewards-000.jpg"
+   ],
+   "url": "lodestar-f3359.web.app/rewards/",
+   "points": {}
+  }
+ }
+}
